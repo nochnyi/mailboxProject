@@ -1,6 +1,5 @@
 package com.company.Tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,7 +7,7 @@ public class MyTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void testMailLogin() {
-		WebDriver driver = app.common.getDriver();
+
 //		System.out.println(driver.getWindowHandle());
 
 		app.login.loginValidUser();

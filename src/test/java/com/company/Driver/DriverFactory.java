@@ -25,10 +25,12 @@ public class DriverFactory {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 			webDriver = new ChromeDriver();
 		}
-		webDriver.get("http://www.i.ua/");
 		webDriver.manage().window().maximize();
+		webDriver.get("http://www.i.ua/");
+
 		return webDriver;
 	}
 }
+
 
 
